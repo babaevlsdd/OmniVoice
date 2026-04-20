@@ -358,13 +358,13 @@ by Xiaomi AI Lab Next-gen Kaldi team.
                             vc_pp,
                             vc_po,
                         ) = _gen_settings()
-                        vc_btn = gr.Button("Generate / 生成", variant="primary")
                     with gr.Column(scale=1):
                         vc_audio = gr.Audio(
                             label="Output Audio / 合成结果",
                             type="numpy",
                         )
                         vc_status = gr.Textbox(label="Status / 状态", lines=2)
+                        vc_btn = gr.Button("Generate / 生成", variant="primary")
 
                 def _clone_fn(
                     text, lang, ref_aud, ref_text, instruct, ns, gs, dn, sp, du, pp, po
@@ -438,13 +438,13 @@ by Xiaomi AI Lab Next-gen Kaldi team.
                             vd_pp,
                             vd_po,
                         ) = _gen_settings()
-                        vd_btn = gr.Button("Generate / 生成", variant="primary")
                     with gr.Column(scale=1):
                         vd_audio = gr.Audio(
                             label="Output Audio / 合成结果",
                             type="numpy",
                         )
                         vd_status = gr.Textbox(label="Status / 状态", lines=2)
+                        vd_btn = gr.Button("Generate / 生成", variant="primary")
 
                 def _build_instruct(groups):
                     """Extract instruct text from UI dropdowns.
